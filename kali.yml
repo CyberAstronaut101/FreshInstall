@@ -56,6 +56,7 @@
         - libffi-dev
         - build-essential
         - remmina
+        - virtualbox-guest-x11
         state: latest
     
     - name: Install ShellUp!

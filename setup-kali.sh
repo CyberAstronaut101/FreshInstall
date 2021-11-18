@@ -28,25 +28,25 @@ echo "***********************************"
 echo "*      Pulling master bashrc      *"
 echo "***********************************"
 
-curl -sL "http://raw.github.com/AgroDan/FreshInstall/master/master-bashrc?nocache=$RANDO" -o /tmp/master-bashrc
+curl -sL "http://raw.github.com/CyberAstronaut101/FreshInstall/master/master-bashrc?nocache=$RANDO" -o /tmp/master-bashrc
 
 echo "***********************************"
 echo "*     Pulling bash_functions      *"
 echo "***********************************"
 
-curl -sL "http://raw.github.com/AgroDan/FreshInstall/master/master-bash_functions?nocache=$RANDO" -o /tmp/master-bash_functions
+curl -sL "http://raw.github.com/CyberAstronaut101/master/master-bash_functions?nocache=$RANDO" -o /tmp/master-bash_functions
 
-echo "***********************************"
-echo "*       Pulling .tmux.conf        *"
-echo "***********************************"
+# echo "***********************************"
+# echo "*       Pulling .tmux.conf        *"
+# echo "***********************************"
 
-curl -sL "http://raw.github.com/AgroDan/FreshInstall/master/master-tmux_conf?nocache=$RANDO" -o /tmp/master-tmux_conf
+# curl -sL "http://raw.github.com/AgroDan/CyberAstronaut101/master/master-tmux_conf?nocache=$RANDO" -o /tmp/master-tmux_conf
 
 echo "***********************************"
 echo "*      Running Kali playbook      *"
 echo "***********************************"
 
-curl -sL "http://raw.github.com/AgroDan/FreshInstall/master/kali.yml?nocache=$RANDO" -o /tmp/kali.yml
+curl -sL "http://raw.github.com/CyberAstronaut101/master/kali.yml?nocache=$RANDO" -o /tmp/kali.yml
 
 ansible-playbook /tmp/kali.yml
 
